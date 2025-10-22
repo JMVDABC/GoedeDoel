@@ -17,4 +17,8 @@ public class GoedeDoel {
 	public BigDecimal getOpbrengst() {
 		return opbrengst;
 	}
+
+	public boolean equals(Object object) {
+		return object instanceof GoedeDoel ander && naam.equalsIgnoreCase(ander.naam);
+	}
 }
